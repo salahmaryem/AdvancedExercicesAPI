@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d1a4a8a2-423d-4f5e-a44e-a0d482ea7ba4",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.bookApi.Authentication</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-05-31 03:18:26 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Authentication and verify the token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/bookApi/Authentication.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Registration of the api client</span>
+          <span class="feature-description">To view or submit an order</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Authentication and verify the token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">15:18:26.304 classpath:examples/bookApi/Authentication.feature:5
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requests/authRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">15:18:26.305 classpath:examples/bookApi/Authentication.feature:6
+* def requestBody = read(&#39;requests/authRequest.json&#39;)
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/api-clients/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">15:18:26.305 classpath:examples/bookApi/Authentication.feature:9
+Given path &#39;/api-clients/&#39;
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">15:18:26.305 classpath:examples/bookApi/Authentication.feature:10
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">15:18:26.305 classpath:examples/bookApi/Authentication.feature:11
+When method POST
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">15:18:26.306 classpath:examples/bookApi/Authentication.feature:12
+Then status 201
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Verify that the token is returned</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.accessToken == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">15:18:26.306 classpath:examples/bookApi/Authentication.feature:14
+And match response.accessToken == &#39;#present&#39;
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: }
+&lt;&lt;&lt;&lt;
+com.intuit.karate.KarateException: js failed:
+&gt;&gt;&gt;&gt;
+01: (function fn() {    
+02:   var env = karate.env; // get system property &#39;karate.env&#39;
+03:   karate.log(&#39;karate.env system property was:&#39;, env);
+04:   if (!env) {
+05:     env = &#39;dev&#39;;
+06:   }
+07:   var config = {
+08:     env: env,
+09:     baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+10:   }
+11:   if (env == &#39;dev&#39;) {
+12:     // customize
+13:     // e.g. config.foo = &#39;bar&#39;;
+14:   } else if (env == &#39;e2e&#39;) {
+15:     // customize
+16:   }
+17:   return config;
+18: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:9:12 Invalid shorthand property name initializer in object literal
+    baseUrl = &#39;https://simple-books-api.glitch.me&#39;
+            ^
+Unnamed:14:4 Expected ) but found else
+  } else if (env == &#39;e2e&#39;) {
+    ^
+Unnamed:16:2 Expected eof but found }
+  }
+  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1199)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:254)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1201)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:296)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:371)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:390)
+- com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:199)
+- com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:140)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

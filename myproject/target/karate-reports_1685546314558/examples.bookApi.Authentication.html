@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d1a4a8a2-423d-4f5e-a44e-a0d482ea7ba4",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.bookApi.Authentication</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-05-31 04:12:17 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Authentication and verify the token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/bookApi/Authentication.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Registration of the api client</span>
+          <span class="feature-description">To view or submit an order</span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Authentication and verify the token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:12:17.884 classpath:examples/bookApi/Authentication.feature:5
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;requests/authRequest.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:12:17.884 classpath:examples/bookApi/Authentication.feature:6
+* def requestBody = read(&#39;requests/authRequest.json&#39;)
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref failed">9</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>path &#39;/api-clients/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">16:12:17.884 classpath:examples/bookApi/Authentication.feature:9
+Given path &#39;/api-clients/&#39;
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">16:12:17.884 classpath:examples/bookApi/Authentication.feature:10
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">16:12:17.885 classpath:examples/bookApi/Authentication.feature:11
+When method POST
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">16:12:17.885 classpath:examples/bookApi/Authentication.feature:12
+Then status 201
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Verify that the token is returned</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref failed">14</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.accessToken == &#39;#present&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">16:12:17.885 classpath:examples/bookApi/Authentication.feature:14
+And match response.accessToken == &#39;#present&#39;
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#Create a file for the token</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>def accessToken = response.accessToken</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">16:12:17.885 classpath:examples/bookApi/Authentication.feature:16
+And def accessToken = response.accessToken
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref failed">17</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>karate.write(accessToken, &#39;access-token.txt&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">16:12:17.885 classpath:examples/bookApi/Authentication.feature:17
+And karate.write(accessToken, &#39;access-token.txt&#39;)
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; not found: access-token.txt
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;classpath:access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: access-token.txt
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+classpath:examples/bookApi/Authentication.feature:17
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
