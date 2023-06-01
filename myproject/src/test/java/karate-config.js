@@ -1,18 +1,11 @@
-function fn() {    
-  var env = karate.env; // get system property 'karate.env'
-  karate.log('karate.env system property was:', env);
-  if (!env) {
-    env = 'dev';
-  }
+function fn() {
+  var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+  var accessToken = karate.read(accessTokenPath);
+
   var config = {
-    env: env,
-	myVarName: 'someValue'
-  }
-  if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
-  }
+    baseUrl: 'https://simple-books-api.glitch.me',
+    accessToken: accessToken
+  };
+
   return config;
 }
