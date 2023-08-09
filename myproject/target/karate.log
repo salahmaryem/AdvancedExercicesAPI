@@ -13090,3 +13090,3477 @@ classpath:examples/bookApi/Authentication.feature:12
 17:38:46.567 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/bookApi/Authentication.feature
 17:38:46.714 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/bookApi/CreateAnOrder.feature
 17:38:46.788 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/bookApi/getByType.feature
+17:47:55.848 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:47:55.856 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1690303675852
+17:47:55.862 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+17:47:56.931 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:5
+* url baseUrl
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+17:47:56.931 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+17:47:56.931 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+17:47:56.932 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:6
+* def requestBody = read('requests/authRequest.json')
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+17:47:56.932 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read('requests/createRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+17:47:56.932 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read('requests/createRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+17:47:56.933 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:9
+Given path '/api-clients/'
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+17:47:56.933 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read('requests/invalidCreatingRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+17:47:56.933 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read('requests/invalidCreatingRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+17:47:56.934 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle('classpath:karate-config.js')
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+17:47:56.934 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle('classpath:karate-config.js')
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+17:47:56.934 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:10
+And request requestBody
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+17:47:56.938 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:11
+When method POST
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+17:47:56.938 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:10
+Given header Authorization = 'Bearer '+ config.accessToken
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+17:47:56.938 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:18
+Given path '/books'
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+17:47:56.941 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:19
+When method GET
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+17:47:56.941 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:12
+Then status 201
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+17:47:56.941 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:11
+And path '/orders'
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+17:47:56.943 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:20
+Then status 200
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+17:47:56.943 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:14
+And match response.accessToken == '#present'
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+17:47:56.943 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:12
+And request requestBody
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+17:47:56.945 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:16
+And def accessToken = response.accessToken
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+17:47:56.945 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:22
+Given header Authorization = 'Bearer '+ config.accessToken
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+17:47:56.945 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:13
+When method POST
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+17:47:56.947 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:23
+And path '/orders'
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+17:47:56.947 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:14
+Then status 201
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+classpath:examples/bookApi/CreateAnOrder.feature:14
+17:47:56.947 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:17
+And karate.write(accessToken, 'access-token.txt')
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+classpath:examples/bookApi/Authentication.feature:17
+17:47:56.949 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:24
+And request requestBody
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+17:47:56.953 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:26
+And set requestBody.bookId = 7
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+17:47:56.953 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:27
+When method POST
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+17:47:56.954 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:28
+Then status 400
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+17:47:56.964 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:29
+And response.error == 'Invalid or missing bookId.'
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+classpath:examples/bookApi/CreateAnOrder.feature:29
+17:47:56.976 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+17:47:56.977 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:7
+Given path '/books'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+17:47:56.978 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:8
+And param type = 'fiction'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+17:47:56.978 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:9
+When method GET
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+17:47:56.978 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:10
+Then status 200
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+17:47:56.978 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:11
+* def bookType = $response[*].type
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+17:47:56.979 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:12
+* print 'Books type:', bookType
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+17:47:56.979 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:13
+* print response.length
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+17:47:56.980 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:16
+* def expectedType = 'fiction'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+classpath:examples/bookApi/getByType.feature:16
+17:47:56.980 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:17
+* def unmatchedBooks = karate.filter(response, function(book) { return book.type != expectedType })
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+classpath:examples/bookApi/getByType.feature:16
+classpath:examples/bookApi/getByType.feature:17
+17:47:56.980 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:18
+* match unmatchedBooks == '#[]'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+classpath:examples/bookApi/getByType.feature:16
+classpath:examples/bookApi/getByType.feature:17
+classpath:examples/bookApi/getByType.feature:18
+17:47:56.992 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+17:47:56.993 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:22
+Given path '/books'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+17:47:56.993 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:23
+And param type = 'non-fiction'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+17:47:57.002 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:24
+When method GET
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+17:47:57.003 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:25
+Then status 200
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+17:47:57.005 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:26
+* def bookType = $response[*].type
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+17:47:57.006 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:27
+* print 'Books type:', bookType
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+17:47:57.008 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:28
+* print response.length
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+17:47:57.012 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:31
+* def expectedType = 'non-fiction'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+classpath:examples/bookApi/getByType.feature:31
+17:47:57.013 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:32
+* def unmatchedBooks = karate.filter(response, function(book) { return book.type != expectedType })
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+classpath:examples/bookApi/getByType.feature:31
+classpath:examples/bookApi/getByType.feature:32
+17:47:57.013 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:33
+* match unmatchedBooks == '#[]'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+classpath:examples/bookApi/getByType.feature:31
+classpath:examples/bookApi/getByType.feature:32
+classpath:examples/bookApi/getByType.feature:33
+17:47:57.755 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/bookApi/Authentication.feature
+17:47:57.877 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:examples/bookApi/CreateAnOrder.feature
+17:47:57.961 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:examples/bookApi/getByType.feature
+17:51:11.814 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:51:11.822 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1690303871818
+17:51:11.831 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+17:51:12.938 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+17:51:12.938 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+17:51:12.938 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:5
+* url baseUrl
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+17:51:12.939 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read('requests/createRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+17:51:12.939 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read('requests/createRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+17:51:12.939 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:6
+* def requestBody = read('requests/authRequest.json')
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+17:51:12.940 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read('requests/invalidCreatingRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+17:51:12.940 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read('requests/invalidCreatingRequest.json')
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+17:51:12.940 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:9
+Given path '/api-clients/'
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+17:51:12.941 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle('classpath:karate-config.js')
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+17:51:12.941 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle('classpath:karate-config.js')
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+17:51:12.941 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:10
+And request requestBody
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+17:51:12.941 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:10
+Given header Authorization = 'Bearer '+ config.accessToken
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+17:51:12.941 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:18
+Given path '/books'
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+17:51:12.942 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:11
+And path '/orders'
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+17:51:12.942 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:11
+When method POST
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+17:51:12.942 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:19
+When method GET
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+17:51:12.943 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:12
+And request requestBody
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+17:51:12.943 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:12
+Then status 201
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+17:51:12.943 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:20
+Then status 200
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+17:51:12.944 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:13
+When method POST
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+17:51:12.944 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:14
+And match response.accessToken == '#present'
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+17:51:12.944 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:22
+Given header Authorization = 'Bearer '+ config.accessToken
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+17:51:12.945 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:14
+Then status 201
+>> classpath:examples/bookApi/CreateAnOrder.feature:9
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+classpath:examples/bookApi/CreateAnOrder.feature:14
+17:51:12.946 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:16
+And def accessToken = response.accessToken
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+17:51:12.946 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:23
+And path '/orders'
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+17:51:12.946 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/bookApi/Authentication.feature:17
+And karate.write(accessToken, 'access-token.txt')
+>> classpath:examples/bookApi/Authentication.feature:8
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+classpath:examples/bookApi/Authentication.feature:17
+17:51:12.946 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:24
+And request requestBody
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+17:51:12.947 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:26
+And set requestBody.bookId = 7
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+17:51:12.947 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:27
+When method POST
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+17:51:12.948 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:28
+Then status 400
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+17:51:12.948 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/CreateAnOrder.feature:29
+And response.error == 'Invalid or missing bookId.'
+>> classpath:examples/bookApi/CreateAnOrder.feature:16
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+classpath:examples/bookApi/CreateAnOrder.feature:29
+17:51:12.960 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+17:51:12.961 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:22
+Given path '/books'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+17:51:12.961 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:23
+And param type = 'non-fiction'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+17:51:12.961 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:24
+When method GET
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+17:51:12.961 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:25
+Then status 200
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+17:51:12.961 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:4
+* url baseUrl
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+17:51:12.962 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:26
+* def bookType = $response[*].type
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+17:51:12.962 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:7
+Given path '/books'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+17:51:12.962 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:27
+* print 'Books type:', bookType
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+17:51:12.962 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:28
+* print response.length
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+17:51:12.962 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:8
+And param type = 'fiction'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+17:51:12.963 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:9
+When method GET
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+17:51:12.963 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:31
+* def expectedType = 'non-fiction'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+classpath:examples/bookApi/getByType.feature:31
+17:51:12.964 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:10
+Then status 200
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+17:51:12.965 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:32
+* def unmatchedBooks = karate.filter(response, function(book) { return book.type != expectedType })
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+classpath:examples/bookApi/getByType.feature:31
+classpath:examples/bookApi/getByType.feature:32
+17:51:12.965 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:11
+* def bookType = $response[*].type
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+17:51:12.965 [pool-1-thread-3] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:33
+* match unmatchedBooks == '#[]'
+>> classpath:examples/bookApi/getByType.feature:21
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:22
+classpath:examples/bookApi/getByType.feature:23
+classpath:examples/bookApi/getByType.feature:24
+classpath:examples/bookApi/getByType.feature:25
+classpath:examples/bookApi/getByType.feature:26
+classpath:examples/bookApi/getByType.feature:27
+classpath:examples/bookApi/getByType.feature:28
+classpath:examples/bookApi/getByType.feature:31
+classpath:examples/bookApi/getByType.feature:32
+classpath:examples/bookApi/getByType.feature:33
+17:51:12.966 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:12
+* print 'Books type:', bookType
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+17:51:12.966 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:13
+* print response.length
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+17:51:12.968 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:16
+* def expectedType = 'fiction'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+classpath:examples/bookApi/getByType.feature:16
+17:51:12.969 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:17
+* def unmatchedBooks = karate.filter(response, function(book) { return book.type != expectedType })
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+classpath:examples/bookApi/getByType.feature:16
+classpath:examples/bookApi/getByType.feature:17
+17:51:12.969 [pool-1-thread-2] ERROR com.intuit.karate - classpath:examples/bookApi/getByType.feature:18
+* match unmatchedBooks == '#[]'
+>> classpath:examples/bookApi/getByType.feature:6
+>> karate-config.js failed
+>> java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+js failed:
+>>>>
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+<<<<
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d'exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- <js>.fn(Unnamed:3)
+
+classpath:examples/bookApi/getByType.feature:4
+classpath:examples/bookApi/getByType.feature:7
+classpath:examples/bookApi/getByType.feature:8
+classpath:examples/bookApi/getByType.feature:9
+classpath:examples/bookApi/getByType.feature:10
+classpath:examples/bookApi/getByType.feature:11
+classpath:examples/bookApi/getByType.feature:12
+classpath:examples/bookApi/getByType.feature:13
+classpath:examples/bookApi/getByType.feature:16
+classpath:examples/bookApi/getByType.feature:17
+classpath:examples/bookApi/getByType.feature:18
+17:51:13.604 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 3 (2 remaining) classpath:examples/bookApi/Authentication.feature
+17:51:13.754 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 3 (1 remaining) classpath:examples/bookApi/CreateAnOrder.feature
+17:51:13.847 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:examples/bookApi/getByType.feature

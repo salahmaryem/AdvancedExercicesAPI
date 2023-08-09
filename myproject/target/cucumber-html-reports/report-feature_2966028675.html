@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>AdvancedExercicesAPI</td>
-      <td>01 Jun 2023, 17:38</td>
+      <td>25 Jul 2023, 17:51</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">examples/bookApi/Authentication.feature</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td >0</td>
+          <td      class="failed"    >9</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">9</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="966208200">0.966</td>
+          <td class="duration" data-value="0">0.000</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -190,12 +190,12 @@ To view or submit an order</div>
 </div>
 
 
-  <span class="lead-duration duration">0.040</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
 
@@ -206,16 +206,16 @@ To view or submit an order</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -225,11 +225,11 @@ To view or submit an order</div>
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">url baseUrl</span>
 
@@ -242,9 +242,81 @@ To view or submit an order</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>17:51:12.939 classpath:examples/bookApi/Authentication.feature:5
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -256,11 +328,11 @@ To view or submit an order</div>
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">def requestBody = read('requests/authRequest.json')</span>
 
-  <span class="lead-duration duration">0.039</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -269,9 +341,83 @@ To view or submit an order</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>17:51:12.940 classpath:examples/bookApi/Authentication.feature:6
+* def requestBody = read('requests/authRequest.json')
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -298,10 +444,10 @@ To view or submit an order</div>
 </div>
 
 
-  <span class="lead-duration duration">0.926</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -314,14 +460,14 @@ To view or submit an order</div>
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -333,11 +479,11 @@ To view or submit an order</div>
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api-clients/'</span>
 
@@ -350,9 +496,85 @@ To view or submit an order</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>17:51:12.941 classpath:examples/bookApi/Authentication.feature:9
+Given path '/api-clients/'
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -364,7 +586,7 @@ To view or submit an order</div>
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">request requestBody</span>
 
@@ -377,9 +599,87 @@ To view or submit an order</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-11">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>17:51:12.942 classpath:examples/bookApi/Authentication.feature:10
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -391,11 +691,11 @@ To view or submit an order</div>
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">method POST</span>
 
-  <span class="lead-duration duration">0.921</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -404,35 +704,85 @@ To view or submit an order</div>
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11</pre>
+      </div>
+    </div>
+  </div>
+
 
 
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>17:38:45.306 request:
-1 &gt; POST https://simple-books-api.glitch.me/api-clients
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 54
-1 &gt; Host: simple-books-api.glitch.me
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;clientName&quot;:&quot;Maryem&quot;,&quot;clientEmail&quot;:&quot;Mm@example.com&quot;}
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>17:51:12.943 classpath:examples/bookApi/Authentication.feature:11
+When method POST
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-17:38:46.012 response time in milliseconds: 704
-1 &lt; 409
-1 &lt; Date: Thu, 01 Jun 2023 16:38:45 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 65
-1 &lt; Connection: keep-alive
-1 &lt; x-powered-by: Express
-1 &lt; etag: W/&quot;41-rjAEsJfLskSzU5wzBOncJcKHOOY&quot;
-{&quot;error&quot;:&quot;API client already registered. Try a different email.&quot;}
-
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
 </pre>
       </div>
     </div>
@@ -452,7 +802,7 @@ To view or submit an order</div>
   <span class="keyword indention">Then</span>
   <span class="name">status 201</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -463,12 +813,39 @@ To view or submit an order</div>
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>status</a>
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>&gt;&gt;</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>status code was: 409, expected: 201, response time in milliseconds: 704, url: https://simple-books-api.glitch.me/api-clients, response: 
-{&quot;error&quot;:&quot;API client already registered. Try a different email.&quot;}
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
 classpath:examples/bookApi/Authentication.feature:12</pre>
       </div>
     </div>
@@ -479,14 +856,41 @@ classpath:examples/bookApi/Authentication.feature:12</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>17:38:46.019 classpath:examples/bookApi/Authentication.feature:12
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>17:51:12.944 classpath:examples/bookApi/Authentication.feature:12
 Then status 201
-status code was: 409, expected: 201, response time in milliseconds: 704, url: https://simple-books-api.glitch.me/api-clients, response: 
-{&quot;error&quot;:&quot;API client already registered. Try a different email.&quot;}
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
 classpath:examples/bookApi/Authentication.feature:12
 </pre>
       </div>
@@ -504,7 +908,7 @@ classpath:examples/bookApi/Authentication.feature:12
           <div class="comment indention">#Verify that the token is returned</div>
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">match response.accessToken == '#present'</span>
 
@@ -517,9 +921,93 @@ classpath:examples/bookApi/Authentication.feature:12
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>17:51:12.945 classpath:examples/bookApi/Authentication.feature:14
+And match response.accessToken == '#present'
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -532,7 +1020,7 @@ classpath:examples/bookApi/Authentication.feature:12
           <div class="comment indention">#Create a file for the token</div>
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">def accessToken = response.accessToken</span>
 
@@ -545,9 +1033,95 @@ classpath:examples/bookApi/Authentication.feature:12
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>17:51:12.946 classpath:examples/bookApi/Authentication.feature:16
+And def accessToken = response.accessToken
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -559,7 +1133,7 @@ classpath:examples/bookApi/Authentication.feature:12
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">karate.write(accessToken, 'access-token.txt')</span>
 
@@ -572,9 +1146,97 @@ classpath:examples/bookApi/Authentication.feature:12
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+classpath:examples/bookApi/Authentication.feature:17</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>17:51:12.947 classpath:examples/bookApi/Authentication.feature:17
+And karate.write(accessToken, 'access-token.txt')
+&gt;&gt; classpath:examples/bookApi/Authentication.feature:8
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/Authentication.feature:5
+classpath:examples/bookApi/Authentication.feature:6
+classpath:examples/bookApi/Authentication.feature:9
+classpath:examples/bookApi/Authentication.feature:10
+classpath:examples/bookApi/Authentication.feature:11
+classpath:examples/bookApi/Authentication.feature:12
+classpath:examples/bookApi/Authentication.feature:14
+classpath:examples/bookApi/Authentication.feature:16
+classpath:examples/bookApi/Authentication.feature:17
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>AdvancedExercicesAPI</td>
-      <td>01 Jun 2023, 17:38</td>
+      <td>25 Jul 2023, 17:51</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">examples/bookApi/CreateAnOrder.feature</td>
-          <td      class="passed"    >23</td>
           <td >0</td>
+          <td      class="failed"    >23</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">23</td>
 
-          <td  class="passed"    >2</td>
           <td >0</td>
+          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="2553872900">2.553</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="0">0.000</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">examples/bookApi/CreateAnOrder.feature</span>
 
@@ -189,12 +189,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.046</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
 
@@ -205,16 +205,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -224,11 +224,11 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">url baseUrl</span>
 
@@ -241,9 +241,81 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>17:51:12.939 classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -255,70 +327,13 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">def requestBody = read('requests/createRequest.json')</span>
 
-  <span class="lead-duration duration">0.039</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def requestBody1 = read('requests/invalidCreatingRequest.json')</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def config = karate.callSingle('classpath:karate-config.js')</span>
-
-  <span class="lead-duration duration">0.005</span>
-
-</div>
-
-
-
 
 
 
@@ -326,12 +341,286 @@ $(document).ready(function() {
 
 
   <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>17:38:45.098 this thread waited 3 milliseconds for callSingle lock: classpath:karate-config.js
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read('requests/createRequest.json')
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody1 = read('requests/invalidCreatingRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read('requests/invalidCreatingRequest.json')
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def config = karate.callSingle('classpath:karate-config.js')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>17:51:12.941 classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle('classpath:karate-config.js')
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
 </pre>
       </div>
     </div>
@@ -362,12 +651,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.024</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Creating an order with valid existing BookId</span>
 
@@ -378,16 +667,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -397,101 +686,17 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">header Authorization = 'Bearer '+ config.accessToken</span>
 
-  <span class="lead-duration duration">0.009</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">path '/orders'</span>
-
   <span class="lead-duration duration">0.000</span>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request requestBody</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method POST</span>
-
-  <span class="lead-duration duration">1.014</span>
-
-</div>
-
-
-
 
 
 
@@ -499,32 +704,84 @@ $(document).ready(function() {
 
 
   <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>17:38:45.306 request:
-1 &gt; POST https://simple-books-api.glitch.me/orders
-1 &gt; Authorization: Bearer 37711cb6db48fa64972b3ee7a15790aaf0dff5516cb19cef24138e58edcda3f6
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 36
-1 &gt; Host: simple-books-api.glitch.me
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;bookId&quot;:1,&quot;customerName&quot;:&quot;Johnny&quot;}
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>17:51:12.942 classpath:examples/bookApi/CreateAnOrder.feature:10
+Given header Authorization = 'Bearer '+ config.accessToken
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-17:38:46.122 response time in milliseconds: 815
-1 &lt; 201
-1 &lt; Date: Thu, 01 Jun 2023 16:38:46 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 50
-1 &lt; Connection: keep-alive
-1 &lt; x-powered-by: Express
-1 &lt; etag: W/&quot;32-2HDhoZg0ssEx470ugflwh9iDg9A&quot;
-{&quot;created&quot;:true,&quot;orderId&quot;:&quot;1bfNxH5Oewn9SOowwnwbr&quot;}
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
 </pre>
       </div>
     </div>
@@ -540,7 +797,340 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/orders'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>17:51:12.943 classpath:examples/bookApi/CreateAnOrder.feature:11
+And path '/orders'
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>17:51:12.944 classpath:examples/bookApi/CreateAnOrder.feature:12
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>17:51:12.945 classpath:examples/bookApi/CreateAnOrder.feature:13
+When method POST
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 201</span>
 
@@ -553,9 +1143,97 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+classpath:examples/bookApi/CreateAnOrder.feature:14</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>17:51:12.946 classpath:examples/bookApi/CreateAnOrder.feature:14
+Then status 201
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+classpath:examples/bookApi/CreateAnOrder.feature:14
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -582,12 +1260,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.046</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Background</span>
   <span class="name"></span>
 
@@ -598,16 +1276,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-23" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-24">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -617,11 +1295,11 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-24" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">url baseUrl</span>
 
@@ -634,9 +1312,81 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-25">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>17:51:12.939 classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -648,70 +1398,13 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">def requestBody = read('requests/createRequest.json')</span>
 
-  <span class="lead-duration duration">0.039</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def requestBody1 = read('requests/invalidCreatingRequest.json')</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* passed">
-  <span class="keyword indention">*</span>
-  <span class="name">def config = karate.callSingle('classpath:karate-config.js')</span>
-
-  <span class="lead-duration duration">0.005</span>
-
-</div>
-
-
-
 
 
 
@@ -719,13 +1412,286 @@ $(document).ready(function() {
 
 
   <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-27">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
           <a>Doc string</a>
       </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>17:38:45.095 &gt;&gt; lock acquired, begin callSingle: classpath:karate-config.js
-17:38:45.098 &lt;&lt; lock released, cached callSingle: classpath:karate-config.js
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read('requests/createRequest.json')
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def requestBody1 = read('requests/invalidCreatingRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-29">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read('requests/invalidCreatingRequest.json')
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def config = karate.callSingle('classpath:karate-config.js')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-31">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>17:51:12.941 classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle('classpath:karate-config.js')
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
 </pre>
       </div>
     </div>
@@ -756,12 +1722,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.436</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-33">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Creating an order with out of stock BookId</span>
 
@@ -772,16 +1738,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details ">
+  <div id="element-33" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-34">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -791,12 +1757,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-34" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention">#First, Get all books to see the out of stock BookId</div>
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/books'</span>
 
@@ -809,60 +1775,85 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-35">
+          <a>&gt;&gt;</a>
       </div>
-      <div class="step">
+      <div id="msg-35" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method GET</span>
-
-  <span class="lead-duration duration">1.030</span>
-
-</div>
-
-
-
-
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18</pre>
+      </div>
+    </div>
+  </div>
 
 
 
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
           <a>Doc string</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details">
-        <pre>17:38:45.306 request:
-1 &gt; GET https://simple-books-api.glitch.me/books
-1 &gt; Host: simple-books-api.glitch.me
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>17:51:12.942 classpath:examples/bookApi/CreateAnOrder.feature:18
+Given path '/books'
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-
-17:38:46.125 response time in milliseconds: 818
-1 &lt; 200
-1 &lt; Date: Thu, 01 Jun 2023 16:38:46 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 417
-1 &lt; Connection: keep-alive
-1 &lt; x-powered-by: Express
-1 &lt; etag: W/&quot;1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU&quot;
-[{&quot;id&quot;:1,&quot;name&quot;:&quot;The Russian&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:2,&quot;name&quot;:&quot;Just as I Am&quot;,&quot;type&quot;:&quot;non-fiction&quot;,&quot;available&quot;:false},{&quot;id&quot;:3,&quot;name&quot;:&quot;The Vanishing Half&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:4,&quot;name&quot;:&quot;The Midnight Library&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:5,&quot;name&quot;:&quot;Untamed&quot;,&quot;type&quot;:&quot;non-fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:6,&quot;name&quot;:&quot;Viscount Who Loved Me&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true}]
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
 </pre>
       </div>
     </div>
@@ -878,7 +1869,116 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-37">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-38">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-38" class="collapse collapsable-details">
+        <pre>17:51:12.943 classpath:examples/bookApi/CreateAnOrder.feature:19
+When method GET
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -891,9 +1991,93 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-39">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>17:51:12.944 classpath:examples/bookApi/CreateAnOrder.feature:20
+Then status 200
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -906,125 +2090,13 @@ $(document).ready(function() {
           <div class="comment indention">#Then, create a request with the false infos</div>
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given failed">
   <span class="keyword indention">Given</span>
   <span class="name">header Authorization = 'Bearer '+ config.accessToken</span>
 
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">path '/orders'</span>
-
   <span class="lead-duration duration">0.000</span>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">request requestBody</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-          <div class="comment indention">#Set the request to an invalid bookId</div>
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">set requestBody.bookId = 7</span>
-
-  <span class="lead-duration duration">0.004</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">method POST</span>
-
-  <span class="lead-duration duration">0.398</span>
-
-</div>
-
-
-
 
 
 
@@ -1032,32 +2104,90 @@ $(document).ready(function() {
 
 
   <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-41">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>17:38:46.137 request:
-2 &gt; POST https://simple-books-api.glitch.me/orders
-2 &gt; Authorization: Bearer 37711cb6db48fa64972b3ee7a15790aaf0dff5516cb19cef24138e58edcda3f6
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 36
-2 &gt; Host: simple-books-api.glitch.me
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;bookId&quot;:7,&quot;customerName&quot;:&quot;Johnny&quot;}
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>17:51:12.945 classpath:examples/bookApi/CreateAnOrder.feature:22
+Given header Authorization = 'Bearer '+ config.accessToken
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-17:38:46.533 response time in milliseconds: 395
-2 &lt; 400
-2 &lt; Date: Thu, 01 Jun 2023 16:38:46 GMT
-2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 38
-2 &lt; Connection: keep-alive
-2 &lt; x-powered-by: Express
-2 &lt; etag: W/&quot;26-nuV6aQ2H3vYGMuVoIahu/HIFYAI&quot;
-{&quot;error&quot;:&quot;Invalid or missing bookId.&quot;}
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
 </pre>
       </div>
     </div>
@@ -1073,7 +2203,480 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">path '/orders'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-43">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>17:51:12.946 classpath:examples/bookApi/CreateAnOrder.feature:23
+And path '/orders'
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">request requestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-45">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-46">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-46" class="collapse collapsable-details">
+        <pre>17:51:12.947 classpath:examples/bookApi/CreateAnOrder.feature:24
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Set the request to an invalid bookId</div>
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">set requestBody.bookId = 7</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-47">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>17:51:12.947 classpath:examples/bookApi/CreateAnOrder.feature:26
+And set requestBody.bookId = 7
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-49">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-49" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>17:51:12.948 classpath:examples/bookApi/CreateAnOrder.feature:27
+When method POST
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
 
@@ -1086,9 +2689,105 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-51">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-52">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-52" class="collapse collapsable-details">
+        <pre>17:51:12.948 classpath:examples/bookApi/CreateAnOrder.feature:28
+Then status 400
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1100,7 +2799,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">response.error == 'Invalid or missing bookId.'</span>
 
@@ -1113,9 +2812,107 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-53">
+          <a>&gt;&gt;</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details  in ">
+        <pre>&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+classpath:examples/bookApi/CreateAnOrder.feature:29</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>17:51:12.948 classpath:examples/bookApi/CreateAnOrder.feature:29
+And response.error == 'Invalid or missing bookId.'
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = 'file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt';
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: 'https://simple-books-api.glitch.me',
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n&rsquo;est pas en cours d'ex&eacute;cution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+classpath:examples/bookApi/CreateAnOrder.feature:29
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 

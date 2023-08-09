@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"d1a4a8a2-423d-4f5e-a44e-a0d482ea7ba4",karate_version:"1.4.0",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"049f26d9-efe2-4423-9a6c-3140e3da5b7e",karate_version:"1.4.0",karate_meta:null});
   }
 });
 </script>
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,15 +49,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-06-01 05:38:46 PM</div>
+    <div>2023-07-25 05:51:13 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:9]"><span>[1:9]</span> <span>Creating an order with valid existing BookId</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2:16]"><span>[2:16]</span> <span>Creating an order with out of stock BookId</span></a>
           </div>
         </div>
@@ -83,8 +83,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1071</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
             </div>
           </div>
           <div class="step-row">
@@ -103,11 +103,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.4">
       <div class="step-ref bg-step">4</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -116,7 +116,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.4">17:51:12.939 classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+</div>   
 
   
 
@@ -131,11 +158,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def requestBody = read(&#39;requests/createRequest.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -144,7 +171,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5">17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read(&#39;requests/createRequest.json&#39;)
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+</div>   
 
   
 
@@ -159,11 +214,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def requestBody1 = read(&#39;requests/invalidCreatingRequest.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -172,7 +227,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.6">17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read(&#39;requests/invalidCreatingRequest.json&#39;)
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+</div>   
 
   
 
@@ -187,11 +271,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def config = karate.callSingle(&#39;classpath:karate-config.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -200,7 +284,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.7">17:38:45.098 this thread waited 3 milliseconds for callSingle lock: classpath:karate-config.js
+  <div class="preformatted" data-parent="0.7">17:51:12.941 classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle(&#39;classpath:karate-config.js&#39;)
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
 </div>   
 
   
@@ -214,13 +327,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+      <div class="step-ref failed">10</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+ config.accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -229,7 +342,38 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.10">17:51:12.942 classpath:examples/bookApi/CreateAnOrder.feature:10
+Given header Authorization = &#39;Bearer &#39;+ config.accessToken
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+</div>   
 
   
 
@@ -242,13 +386,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
+      <div class="step-ref failed">11</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>path &#39;/orders&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -257,7 +401,39 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.11">17:51:12.943 classpath:examples/bookApi/CreateAnOrder.feature:11
+And path &#39;/orders&#39;
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+</div>   
 
   
 
@@ -270,13 +446,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+      <div class="step-ref failed">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>request requestBody</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -285,7 +461,40 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.12">17:51:12.944 classpath:examples/bookApi/CreateAnOrder.feature:12
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+</div>   
 
   
 
@@ -298,13 +507,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+      <div class="step-ref failed">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">1014</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -313,27 +522,40 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.13">17:38:45.306 request:
-1 &gt; POST https://simple-books-api.glitch.me/orders
-1 &gt; Authorization: Bearer 37711cb6db48fa64972b3ee7a15790aaf0dff5516cb19cef24138e58edcda3f6
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 36
-1 &gt; Host: simple-books-api.glitch.me
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;bookId&quot;:1,&quot;customerName&quot;:&quot;Johnny&quot;}
+  <div class="preformatted" data-parent="0.13">17:51:12.945 classpath:examples/bookApi/CreateAnOrder.feature:13
+When method POST
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-17:38:46.122 response time in milliseconds: 815
-1 &lt; 201
-1 &lt; Date: Thu, 01 Jun 2023 16:38:46 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 50
-1 &lt; Connection: keep-alive
-1 &lt; x-powered-by: Express
-1 &lt; etag: W/&quot;32-2HDhoZg0ssEx470ugflwh9iDg9A&quot;
-{&quot;created&quot;:true,&quot;orderId&quot;:&quot;1bfNxH5Oewn9SOowwnwbr&quot;}
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
 </div>   
 
   
@@ -347,13 +569,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+      <div class="step-ref failed">14</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -362,7 +584,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.14">17:51:12.946 classpath:examples/bookApi/CreateAnOrder.feature:14
+Then status 201
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:9
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:10
+classpath:examples/bookApi/CreateAnOrder.feature:11
+classpath:examples/bookApi/CreateAnOrder.feature:12
+classpath:examples/bookApi/CreateAnOrder.feature:13
+classpath:examples/bookApi/CreateAnOrder.feature:14
+</div>   
 
   
 
@@ -381,8 +638,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1483</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
             </div>
           </div>
           <div class="step-row">
@@ -401,11 +658,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.4">
       <div class="step-ref bg-step">4</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>url baseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -414,7 +671,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.4">17:51:12.939 classpath:examples/bookApi/CreateAnOrder.feature:4
+* url baseUrl
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+</div>   
 
   
 
@@ -429,11 +713,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def requestBody = read(&#39;requests/createRequest.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">39</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -442,7 +726,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5">17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:5
+* def requestBody = read(&#39;requests/createRequest.json&#39;)
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+</div>   
 
   
 
@@ -457,11 +769,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def requestBody1 = read(&#39;requests/invalidCreatingRequest.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -470,7 +782,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.6">17:51:12.940 classpath:examples/bookApi/CreateAnOrder.feature:6
+* def requestBody1 = read(&#39;requests/invalidCreatingRequest.json&#39;)
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+</div>   
 
   
 
@@ -485,11 +826,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def config = karate.callSingle(&#39;classpath:karate-config.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -498,8 +839,36 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.7">17:38:45.095 &gt;&gt; lock acquired, begin callSingle: classpath:karate-config.js
-17:38:45.098 &lt;&lt; lock released, cached callSingle: classpath:karate-config.js
+  <div class="preformatted" data-parent="0.7">17:51:12.941 classpath:examples/bookApi/CreateAnOrder.feature:7
+* def config = karate.callSingle(&#39;classpath:karate-config.js&#39;)
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
 </div>   
 
   
@@ -520,13 +889,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
+      <div class="step-ref failed">18</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Given</span>&nbsp;<span>path &#39;/books&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -535,7 +904,38 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.18">17:51:12.942 classpath:examples/bookApi/CreateAnOrder.feature:18
+Given path &#39;/books&#39;
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+</div>   
 
   
 
@@ -548,13 +948,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.19">
-      <div class="step-ref passed">19</div>
+      <div class="step-ref failed">19</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">1030</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -563,24 +963,38 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.19">17:38:45.306 request:
-1 &gt; GET https://simple-books-api.glitch.me/books
-1 &gt; Host: simple-books-api.glitch.me
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-1 &gt; Accept-Encoding: gzip,deflate
+  <div class="preformatted" data-parent="0.19">17:51:12.943 classpath:examples/bookApi/CreateAnOrder.feature:19
+When method GET
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-
-17:38:46.125 response time in milliseconds: 818
-1 &lt; 200
-1 &lt; Date: Thu, 01 Jun 2023 16:38:46 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 417
-1 &lt; Connection: keep-alive
-1 &lt; x-powered-by: Express
-1 &lt; etag: W/&quot;1a1-MfqhfTYtZO2sguD1mJq8Vf41WjU&quot;
-[{&quot;id&quot;:1,&quot;name&quot;:&quot;The Russian&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:2,&quot;name&quot;:&quot;Just as I Am&quot;,&quot;type&quot;:&quot;non-fiction&quot;,&quot;available&quot;:false},{&quot;id&quot;:3,&quot;name&quot;:&quot;The Vanishing Half&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:4,&quot;name&quot;:&quot;The Midnight Library&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:5,&quot;name&quot;:&quot;Untamed&quot;,&quot;type&quot;:&quot;non-fiction&quot;,&quot;available&quot;:true},{&quot;id&quot;:6,&quot;name&quot;:&quot;Viscount Who Loved Me&quot;,&quot;type&quot;:&quot;fiction&quot;,&quot;available&quot;:true}]
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
 </div>   
 
   
@@ -594,13 +1008,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.20">
-      <div class="step-ref passed">20</div>
+      <div class="step-ref failed">20</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -609,7 +1023,40 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.20">17:51:12.944 classpath:examples/bookApi/CreateAnOrder.feature:20
+Then status 200
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+</div>   
 
   
 
@@ -629,13 +1076,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
+      <div class="step-ref failed">22</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Given</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+ config.accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -644,7 +1091,41 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.22">17:51:12.945 classpath:examples/bookApi/CreateAnOrder.feature:22
+Given header Authorization = &#39;Bearer &#39;+ config.accessToken
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+</div>   
 
   
 
@@ -657,13 +1138,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.23">
-      <div class="step-ref passed">23</div>
+      <div class="step-ref failed">23</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>path &#39;/orders&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -672,7 +1153,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.23">17:51:12.946 classpath:examples/bookApi/CreateAnOrder.feature:23
+And path &#39;/orders&#39;
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+</div>   
 
   
 
@@ -685,13 +1201,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.24">
-      <div class="step-ref passed">24</div>
+      <div class="step-ref failed">24</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>request requestBody</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -700,7 +1216,43 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.24">17:51:12.947 classpath:examples/bookApi/CreateAnOrder.feature:24
+And request requestBody
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+</div>   
 
   
 
@@ -720,13 +1272,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref failed">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>set requestBody.bookId = 7</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -735,7 +1287,44 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.26">17:51:12.947 classpath:examples/bookApi/CreateAnOrder.feature:26
+And set requestBody.bookId = 7
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+</div>   
 
   
 
@@ -748,13 +1337,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.27">
-      <div class="step-ref passed">27</div>
+      <div class="step-ref failed">27</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">398</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -763,27 +1352,44 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">17:38:46.137 request:
-2 &gt; POST https://simple-books-api.glitch.me/orders
-2 &gt; Authorization: Bearer 37711cb6db48fa64972b3ee7a15790aaf0dff5516cb19cef24138e58edcda3f6
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 36
-2 &gt; Host: simple-books-api.glitch.me
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/17.0.6)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;bookId&quot;:7,&quot;customerName&quot;:&quot;Johnny&quot;}
+  <div class="preformatted" data-parent="0.27">17:51:12.948 classpath:examples/bookApi/CreateAnOrder.feature:27
+When method POST
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
 
-17:38:46.533 response time in milliseconds: 395
-2 &lt; 400
-2 &lt; Date: Thu, 01 Jun 2023 16:38:46 GMT
-2 &lt; Content-Type: application/json; charset=utf-8
-2 &lt; Content-Length: 38
-2 &lt; Connection: keep-alive
-2 &lt; x-powered-by: Express
-2 &lt; etag: W/&quot;26-nuV6aQ2H3vYGMuVoIahu/HIFYAI&quot;
-{&quot;error&quot;:&quot;Invalid or missing bookId.&quot;}
-
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
 </div>   
 
   
@@ -797,13 +1403,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
+      <div class="step-ref failed">28</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -812,7 +1418,46 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.28">17:51:12.948 classpath:examples/bookApi/CreateAnOrder.feature:28
+Then status 400
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+</div>   
 
   
 
@@ -825,13 +1470,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.29">
-      <div class="step-ref passed">29</div>
+      <div class="step-ref failed">29</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>And</span>&nbsp;<span>response.error == &#39;Invalid or missing bookId.&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -840,7 +1485,47 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.29">17:51:12.948 classpath:examples/bookApi/CreateAnOrder.feature:29
+And response.error == &#39;Invalid or missing bookId.&#39;
+&gt;&gt; classpath:examples/bookApi/CreateAnOrder.feature:16
+&gt;&gt; karate-config.js failed
+&gt;&gt; java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+js failed:
+&gt;&gt;&gt;&gt;
+01: function fn() {
+02:   var accessTokenPath = &#39;file:C:/Users/msalah/OneDrive - SQLI/Documents/SeleniumProjects/AdvancedExercicesAPI/myproject/target/access-token.txt&#39;;
+03:   var accessToken = karate.read(accessTokenPath);
+04: 
+05:   var config = {
+06:     baseUrl: &#39;https://simple-books-api.glitch.me&#39;,
+07:     accessToken: accessToken
+08:   };
+09: 
+10:   return config;
+11: }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: java.lang.RuntimeException: java.io.IOException: Le fournisseur de fichier cloud n’est pas en cours d&#39;exécution
+- com.intuit.karate.FileUtils.toString(FileUtils.java:124)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:62)
+- com.intuit.karate.core.ScenarioBridge.read(ScenarioBridge.java:726)
+- &lt;js&gt;.fn(Unnamed:3)
+
+classpath:examples/bookApi/CreateAnOrder.feature:4
+classpath:examples/bookApi/CreateAnOrder.feature:5
+classpath:examples/bookApi/CreateAnOrder.feature:6
+classpath:examples/bookApi/CreateAnOrder.feature:7
+classpath:examples/bookApi/CreateAnOrder.feature:18
+classpath:examples/bookApi/CreateAnOrder.feature:19
+classpath:examples/bookApi/CreateAnOrder.feature:20
+classpath:examples/bookApi/CreateAnOrder.feature:22
+classpath:examples/bookApi/CreateAnOrder.feature:23
+classpath:examples/bookApi/CreateAnOrder.feature:24
+classpath:examples/bookApi/CreateAnOrder.feature:26
+classpath:examples/bookApi/CreateAnOrder.feature:27
+classpath:examples/bookApi/CreateAnOrder.feature:28
+classpath:examples/bookApi/CreateAnOrder.feature:29
+</div>   
 
   
 
